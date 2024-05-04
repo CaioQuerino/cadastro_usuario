@@ -140,4 +140,8 @@ button:hover{
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 320px){
+        
+    }
 }
