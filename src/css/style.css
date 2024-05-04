@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Advent Pro", Arial, sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+body{
+    background-color: hsl(39, 100%, 50%);
+    display: grid;
+}
+
+section fieldset, section input{
+    border: none;
+}
+
+section fieldset{
+    margin-bottom: 10px;
+}
+
+section h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+section label{
+    font-size: 20px;
+}
+
+form{
+    background-color: hsla(0, 0%, 100%, 0.363);
+    text-align: center;
+    height: 100vh;
+}
+
+    .container input[type="text"]:focus,
+    .container input[type="email"]:focus,
+    .container input[type="tel"]:focus,
+    .container input[type="date"]:focus,
+    .container input[type="password"]:focus{
+        border-bottom: 2px solid orange;
+    }
+
+    .container input[type="text"]:hover,
+    .container input[type="email"]:hover,
+    .container input[type="tel"]:hover,
+    .container input[type="date"]:hover,
+    .container input[type="password"]:hover{
+        border: 2px solid orange;
+    }
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="date"],
+.container input[type="password"] {
+    font-size: 20px;
+    color: hsl(0, 0%, 0%);
+    width: 50%;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(190, 124, 1);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+
+button:hover{
+    background-color: orange;
+}
+
+
+@media (max-width: 540px){
+
+    section h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    section label{
+        font-size: 15px;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="tel"],
+    .container input[type="date"],
+    .container input[type="password"] {
+        font-size: 15px;
+        width: 50%;
+        border: none;
+        border-bottom: 1px solid black;
+    }   
+}
+
+@media (max-width: 375px){
+
+    section h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    section label{
+        font-size: 15px;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="tel"],
+    .container input[type="date"],
+    .container input[type="password"] {
+        font-size: 15px;
+        width: 60%;
+        border: none;
+        border-bottom: 1px solid black;
+    }   
+
+    form{
+        background-color: hsla(0, 0%, 100%, 0.363);
+        text-align: justify;
+        padding-left: 20px;
+    }
+
+    fieldset .container_button{
+        display: flex;
+        justify-content: center;
+    }
+}

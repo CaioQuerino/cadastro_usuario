@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <form action="#" method="post">
+            <h1>CADASTRO DO USUÁRIO</h1>
+            <fieldset>
+                <div class="container">
+                    <label for="idName">Nome Completo:</label>
+                    <input type="text" placeholder="Joaquim Da Silva Roxa" required name="nome" id="idName">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+                    <label for="idName">CPF:</label>
+                    <input type="text" placeholder="111.111.111-11" minlength="11" maxlength="14" required name="nome" id="idCpf">
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="container">
+                    <label for="idEmail">E-mail:</label>
+                    <input type="email" placeholder="name_user@email.com" required name="email" id="idEmail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <label for="idCell">Celular:</label>
+                    <input type="tel" placeholder="(99) 99999-9999" required name="cellphone" id="idCell">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <label>Data de Nascimento:</label>
+                    <input type="date" placeholder="dd/mm/yyyy" required name="nascimento">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <label for="idSenha">Senha:</label>
+                    <input type="password" placeholder="********" minlength="6" maxlength="8" required name="Senha" id="idSenha">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <label for="idConfirmSenha">Confitme senha:</label>
+                    <input type="password" placeholder="********" minlength="6" maxlength="8" required name="Senha" id="idConfirmSenha">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a href="#">Ler termos de uso</a>
+                
+                <fieldset>
+                    <div id="leu">
+                        <input type="checkbox" name="ler_accept">
+                        <label>Declaro ter lido os termos de uso</label>
+                    </div>
+                </fieldset>
+
+                <div id="check">
+                    <input type="checkbox" name="accept">
+                    <label>Aceitar os termos de uso</label>
+                </div>
+            </fieldset>
+
+            <fieldset><div class="container_button"><button>Criar conta</button></div></fieldset>
+        </form>
+    </section>
+    
+</body>
+</html>
